@@ -4,7 +4,7 @@
 ### *Building Resilient Systems with Java, Spring Boot, & Angular*
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-cyan?style=for-the-badge&logo=google-chrome&logoColor=white)](https://shaqiiee1984.github.io/ShakilJansberg/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jansberg/)
 [![Email](https://img.shields.io/badge/Email-Contact_Me-emerald?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shakil.jansberg@gmail.com)
 
 ---
