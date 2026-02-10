@@ -84,6 +84,7 @@
                     subtitle: 'Education, certifications, and language protocols.',
                     education: 'Education',
                     certifications: 'Certifications',
+                    verify: 'Click to verify',
                     languages: 'Language Protocols',
                     communication: 'Communication standards',
                     native: 'NATIVE FLUENCY',
@@ -136,6 +137,7 @@
                     subtitle: 'Ausbildung, Zertifizierungen und Sprachkenntnisse.',
                     education: 'Ausbildung',
                     certifications: 'Zertifizierungen',
+                    verify: 'Zum Verifizieren klicken',
                     languages: 'Sprachprotokolle',
                     communication: 'Kommunikationsstandards',
                     native: 'MUTTERSPRACHE',
@@ -175,34 +177,17 @@
                 linkedin: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>,
                 award: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>,
                 globe: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>,
-                briefcase: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                briefcase: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>,
+                check: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><polyline points="20 6 9 17 4 12"></polyline></svg>
             };
             return icons[type] || null;
         };
 
-        // --- Certification Logo Components ---
-        const AWSLogo = () => (
-            <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
-                <path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.863.279a2.01 2.01 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36.39-.096.795-.143 1.214-.143.926 0 1.606.216 2.053.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.503.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.295.838.295zm6.41.862c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z"/>
-            </svg>
-        );
-
-        const SalesforceLogo = () => (
-            <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
-                <path d="M10.006 5.415a4.195 4.195 0 0 1 3.045-1.306c1.56 0 2.954.9 3.552 2.238a5.11 5.11 0 0 1 2.448-.622c2.823 0 5.112 2.288 5.112 5.111 0 2.823-2.289 5.112-5.112 5.112a5.138 5.138 0 0 1-2.448-.622 4.187 4.187 0 0 1-3.552 2.238 4.195 4.195 0 0 1-3.045-1.306 5.06 5.06 0 0 1-1.306 3.045 4.195 4.195 0 0 1-3.045 1.306c-1.56 0-2.954-.9-3.552-2.238a5.11 5.11 0 0 1-2.448.622C2.288 20.223 0 17.935 0 15.112c0-2.823 2.288-5.111 5.111-5.111.873 0 1.694.22 2.448.622a4.187 4.187 0 0 1 3.552-2.238c1.137 0 2.17.453 2.923 1.188l.028-.028-.056.028z"/>
-            </svg>
-        );
-
-        const OracleLogo = () => (
-            <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
-                <path d="M16.412 4.412H7.588v15.176h8.824V4.412zm-7.765.882h6.706v13.412H8.647V5.294zm7.765 15.176h-8.824v.882h8.824v-.882zM12 10.059c-1.46 0-2.647 1.186-2.647 2.647 0 1.46 1.186 2.647 2.647 2.647 1.46 0 2.647-1.186 2.647-2.647 0-1.46-1.186-2.647-2.647-2.647zm0 4.412a1.766 1.766 0 1 1 0-3.53 1.766 1.766 0 0 1 0 3.53z"/>
-            </svg>
-        );
-
-        const LinuxLogo = () => (
-            <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
-                <path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.424.424 0 0 0-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071.771-.06 1.592-.536 2.257-1.306.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.357.357 0 0 0-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139zm.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105a.086.086 0 0 1-.004-.021l-.004-.024a1.807 1.807 0 0 1-.15.706.953.953 0 0 1-.213.335.71.71 0 0 0-.088-.042c-.104-.045-.198-.064-.284-.133a1.312 1.312 0 0 0-.22-.066c.05-.06.146-.133.183-.198.053-.128.082-.264.088-.402v-.02a1.21 1.21 0 0 0-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 0 0-.205.334 1.18 1.18 0 0 0-.09.41v.019c.002.089.008.179.037.268.041.158.135.294.24.388a.82.82 0 0 1-.227.066c-.087.028-.176.06-.266.134a.515.515 0 0 0-.1.068.62.62 0 0 1-.218-.335 1.697 1.697 0 0 1-.157-.707v-.023c.006-.2.06-.398.166-.66a1.13 1.13 0 0 1 .438-.535c.188-.135.371-.197.584-.197zM8.063 13.5c.088 0 .176.004.266.01.29.016.58.058.862.12.277.06.546.14.802.24.254.098.496.216.72.35.223.135.427.287.606.458.18.17.333.36.46.565.125.205.224.426.294.658.07.23.11.473.12.72.01.247-.02.494-.086.732-.067.24-.168.466-.3.675-.135.21-.3.398-.494.56-.193.163-.414.3-.657.406-.242.107-.505.18-.778.22-.274.04-.555.046-.83.02a3.02 3.02 0 0 1-.788-.16 2.784 2.784 0 0 1-.704-.353 2.692 2.692 0 0 1-.548-.52 2.545 2.545 0 0 1-.388-.644 2.472 2.472 0 0 1-.2-.733 2.585 2.585 0 0 1 .02-.753c.055-.25.147-.49.274-.713.127-.222.286-.426.473-.606.187-.18.4-.336.635-.46.234-.123.486-.213.75-.267.264-.054.536-.07.806-.05zm7.868.1c.266 0 .53.02.786.067.256.046.502.12.732.218.23.1.44.22.628.364.188.145.352.313.49.503.136.19.246.398.326.62.08.22.13.453.147.69.018.237-.006.476-.07.706-.063.23-.164.446-.298.644-.134.197-.3.375-.494.527-.193.152-.413.277-.653.37-.24.095-.497.157-.76.186-.264.028-.53.024-.79-.014a3.053 3.053 0 0 1-.752-.19 2.836 2.836 0 0 1-.662-.354 2.642 2.642 0 0 1-.532-.51 2.445 2.445 0 0 1-.374-.63 2.328 2.328 0 0 1-.176-.71 2.44 2.44 0 0 1 .042-.74c.06-.246.156-.482.285-.7.13-.22.292-.418.483-.59.19-.172.408-.318.648-.434.24-.115.5-.2.77-.25.27-.05.546-.065.82-.046z"/>
-            </svg>
+        // --- Certification Logo Placeholder Component ---
+        const CertPlaceholder = ({ name }) => (
+            <div className="w-10 h-10 rounded bg-slate-700 flex items-center justify-center text-xs text-slate-400 font-mono border border-slate-600">
+                {name.substring(0, 2).toUpperCase()}
+            </div>
         );
 
         // --- Components ---
@@ -482,6 +467,20 @@
         };
 
         const Credentials = ({ t }) => {
+            const certLinks = {
+                oracle: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=45CD6E1F33615B9FE162FD9978E24D5C3E016D88D1B65FDFBEBEC958496BB36A",
+                credly: "https://www.credly.com/users/shakil-ahmad.8bf599b6/badges#credly",
+                salesforce: "https://www.salesforce.com/trailblazer/sam1984"
+            };
+
+            // Replace these with your actual certification badge images
+            const certImages = {
+                oracle: "https://via.placeholder.com/40x40/FF6B35/FFFFFF?text=O",
+                aws: "https://via.placeholder.com/40x40/FF9900/FFFFFF?text=AWS",
+                salesforce: "https://via.placeholder.com/40x40/00A1E0/FFFFFF?text=SF",
+                linux: "https://via.placeholder.com/40x40/FCC624/000000?text=LX"
+            };
+
             return (
                 <section id="credentials" className="py-24 bg-slate-950">
                     <div className="max-w-7xl mx-auto px-6">
@@ -523,31 +522,97 @@
                                     <h3 className="text-xl font-bold text-white">{t.credentials.certifications}</h3>
                                 </div>
                                 <div className="space-y-3">
-                                    <div className="p-3 bg-slate-800/50 rounded border border-slate-700 flex items-center gap-3">
-                                        <OracleLogo />
-                                        <div className="font-bold text-slate-200 text-sm">Oracle Certified Professional: Java SE 17 Developer</div>
-                                    </div>
-                                    <div className="p-3 bg-slate-800/50 rounded border border-slate-700 flex items-center gap-3">
-                                        <AWSLogo />
-                                        <div className="font-bold text-slate-200 text-sm">AWS Certified Solutions Architect – Associate</div>
-                                    </div>
-                                    <div className="p-3 bg-slate-800/50 rounded border border-slate-700 flex items-center gap-3">
-                                        <AWSLogo />
-                                        <div className="font-bold text-slate-200 text-sm">AWS Certified Cloud Practitioner</div>
-                                    </div>
-                                    <div className="p-3 bg-gradient-to-r from-blue-900/30 to-blue-800/30 rounded border border-blue-500/30 flex items-center gap-3">
-                                        <SalesforceLogo />
-                                        <div className="font-bold text-blue-200 text-sm">Salesforce Certified Developer I & II</div>
-                                    </div>
-                                    <div className="p-3 bg-gradient-to-r from-blue-900/30 to-blue-800/30 rounded border border-blue-500/30 flex items-center gap-3">
-                                        <SalesforceLogo />
-                                        <div className="font-bold text-blue-200 text-sm">Salesforce Certified Administrator</div>
-                                    </div>
-                                    <div className="mt-4 pt-4 border-t border-slate-700">
-                                        <div className="text-xs font-mono text-slate-400 mb-2 flex items-center gap-2">
-                                            <LinuxLogo />
-                                            {t.credentials.linuxFoundation}
+                                    <a 
+                                        href={certLinks.oracle}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="p-3 bg-slate-800/50 rounded border border-slate-700 flex items-center gap-3 hover:bg-slate-700/50 transition-all group cursor-pointer"
+                                    >
+                                        <img src={certImages.oracle} alt="Oracle" className="w-10 h-10 rounded object-cover" />
+                                        <div className="flex-1">
+                                            <div className="font-bold text-slate-200 text-sm">Oracle Certified Professional: Java SE 17 Developer</div>
+                                            <div className="text-xs text-emerald-400 flex items-center gap-1 mt-0.5">
+                                                <Icon type="check" className="w-3 h-3" /> {t.credentials.verify}
+                                            </div>
                                         </div>
+                                        <Icon type="external" className="w-4 h-4 text-slate-500 group-hover:text-cyan-400" />
+                                    </a>
+                                    
+                                    <a 
+                                        href={certLinks.credly}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="p-3 bg-slate-800/50 rounded border border-slate-700 flex items-center gap-3 hover:bg-slate-700/50 transition-all group cursor-pointer"
+                                    >
+                                        <img src={certImages.aws} alt="AWS" className="w-10 h-10 rounded object-cover" />
+                                        <div className="flex-1">
+                                            <div className="font-bold text-slate-200 text-sm">AWS Certified Solutions Architect – Associate</div>
+                                            <div className="text-xs text-emerald-400 flex items-center gap-1 mt-0.5">
+                                                <Icon type="check" className="w-3 h-3" /> {t.credentials.verify}
+                                            </div>
+                                        </div>
+                                        <Icon type="external" className="w-4 h-4 text-slate-500 group-hover:text-cyan-400" />
+                                    </a>
+                                    
+                                    <a 
+                                        href={certLinks.credly}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="p-3 bg-slate-800/50 rounded border border-slate-700 flex items-center gap-3 hover:bg-slate-700/50 transition-all group cursor-pointer"
+                                    >
+                                        <img src={certImages.aws} alt="AWS" className="w-10 h-10 rounded object-cover" />
+                                        <div className="flex-1">
+                                            <div className="font-bold text-slate-200 text-sm">AWS Certified Cloud Practitioner</div>
+                                            <div className="text-xs text-emerald-400 flex items-center gap-1 mt-0.5">
+                                                <Icon type="check" className="w-3 h-3" /> {t.credentials.verify}
+                                            </div>
+                                        </div>
+                                        <Icon type="external" className="w-4 h-4 text-slate-500 group-hover:text-cyan-400" />
+                                    </a>
+                                    
+                                    <a 
+                                        href={certLinks.salesforce}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="p-3 bg-gradient-to-r from-blue-900/30 to-blue-800/30 rounded border border-blue-500/30 flex items-center gap-3 hover:from-blue-900/50 hover:to-blue-800/50 transition-all group cursor-pointer"
+                                    >
+                                        <img src={certImages.salesforce} alt="Salesforce" className="w-10 h-10 rounded object-cover" />
+                                        <div className="flex-1">
+                                            <div className="font-bold text-blue-200 text-sm">Salesforce Certified Developer I & II</div>
+                                            <div className="text-xs text-blue-400 flex items-center gap-1 mt-0.5">
+                                                <Icon type="check" className="w-3 h-3" /> {t.credentials.verify}
+                                            </div>
+                                        </div>
+                                        <Icon type="external" className="w-4 h-4 text-blue-400/50 group-hover:text-blue-300" />
+                                    </a>
+                                    
+                                    <a 
+                                        href={certLinks.salesforce}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="p-3 bg-gradient-to-r from-blue-900/30 to-blue-800/30 rounded border border-blue-500/30 flex items-center gap-3 hover:from-blue-900/50 hover:to-blue-800/50 transition-all group cursor-pointer"
+                                    >
+                                        <img src={certImages.salesforce} alt="Salesforce" className="w-10 h-10 rounded object-cover" />
+                                        <div className="flex-1">
+                                            <div className="font-bold text-blue-200 text-sm">Salesforce Certified Administrator</div>
+                                            <div className="text-xs text-blue-400 flex items-center gap-1 mt-0.5">
+                                                <Icon type="check" className="w-3 h-3" /> {t.credentials.verify}
+                                            </div>
+                                        </div>
+                                        <Icon type="external" className="w-4 h-4 text-blue-400/50 group-hover:text-blue-300" />
+                                    </a>
+                                    
+                                    <div className="mt-4 pt-4 border-t border-slate-700">
+                                        <a 
+                                            href={certLinks.credly}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-xs font-mono text-slate-400 mb-2 flex items-center gap-2 hover:text-cyan-400 transition-colors cursor-pointer"
+                                        >
+                                            <img src={certImages.linux} alt="Linux" className="w-4 h-4 rounded object-cover" />
+                                            {t.credentials.linuxFoundation}
+                                            <Icon type="external" className="w-3 h-3" />
+                                        </a>
                                         <div className="flex flex-wrap gap-2">
                                             {['LFS111 (Node.js)', 'LFS151 (Cloud)', 'LFS158 (Kubernetes)', 'LFS167 (Jenkins)', 'LFS180 (DevSecOps)', 'SKF100 (OWASP)'].map(cert => (
                                                 <span key={cert} className="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">{cert}</span>
