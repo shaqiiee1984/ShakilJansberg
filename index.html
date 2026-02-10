@@ -4,7 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shakil Jansberg | System Architect</title>
+    <title>Shakil Jansberg | Full Stack Developer & System Architect</title>
+    <meta name="description"
+        content="Shakil Jansberg - Full Stack Developer & System Architect based in Munich, Germany. Expert in Java/Spring Boot, Angular, CI/CD, and DevSecOps. Formerly known as Shakil Ahmad.">
+    <meta name="keywords"
+        content="Shakil Jansberg, Shakil Ahmad, Full Stack Developer, System Architect, Java, Spring Boot, Angular, Microservices, DevSecOps, Munich, Germany, CI/CD, Kubernetes, Cloud-Native">
+    <meta name="author" content="Shakil Jansberg">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shakil-jansberg.vercel.app/">
+    <meta property="og:title" content="Shakil Jansberg | Full Stack Developer & System Architect">
+    <meta property="og:description"
+        content="Full Stack Developer specialized in resilient systems, Java/Spring Boot, and DevSecOps. Based in Munich, Germany.">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shakil Jansberg",
+      "alternateName": "Shakil Ahmad",
+      "jobTitle": "Full Stack Developer & System Architect",
+      "url": "https://shakil-jansberg.vercel.app/",
+      "sameAs": [
+        "https://www.linkedin.com/in/jansberg/",
+        "https://github.com/shaqiiee1984"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Munich",
+        "addressRegion": "Bavaria",
+        "addressCountry": "Germany"
+      },
+      "knowsAbout": ["Java", "Spring Boot", "Angular", "System Architecture", "DevSecOps", "CI/CD", "Cloud Computing"]
+    }
+    </script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -80,6 +117,10 @@
                         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse-custom"></span>
                         <span data-i18n="hero.available">AVAILABLE FOR HIRE</span>
                     </div>
+
+                    <div class="mb-2 text-xl md:text-2xl font-mono text-cyan-400">Shakil Jansberg</div>
+                    <div class="mb-6 text-sm md:text-base text-slate-500 font-mono">Munich, Germany</div>
+
                     <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight text-white">
                         <span data-i18n="hero.title1">Architecting</span> <br />
                         <span
@@ -88,8 +129,8 @@
                         <span data-i18n="hero.title3">Systems.</span>
                     </h1>
                     <p class="text-slate-400 text-lg mb-8 max-w-lg leading-relaxed" data-i18n="hero.subtitle">
-                        Full Stack Engineer specializing in Java/Spring Boot ecosystems, Angular frontends, and
-                        DevSecOps. I engineer scalable, secure infrastructure, not just code.
+                        Full Stack Developer | Java/Spring Boot & TypeScript/Angular | Expert in CI/CD, Test Engineering
+                        & System Resilience.
                     </p>
                     <div class="flex gap-4">
                         <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})"
@@ -674,8 +715,12 @@
             </div>
 
             <footer
-                class="mt-24 pt-8 border-t border-slate-800 text-slate-600 text-sm font-mono flex flex-col md:flex-row justify-between items-center max-w-4xl mx-auto px-6">
-                <p>© 2025 Shakil Jansberg. <span data-i18n="contact.footer">All systems operational.</span></p>
+                class="mt-24 pt-8 border-t border-slate-800 text-slate-600 text-sm font-mono flex flex-col md:flex-row justify-between items-center max-w-4xl mx-auto px-6 pb-8">
+                <div class="flex flex-col gap-2">
+                    <p>© 2025 Shakil Jansberg. <span data-i18n="contact.footer">All systems operational.</span></p>
+                    <p class="text-xs text-slate-700 mt-1" data-i18n="legal.nameChange">Official name change, formerly
+                        known as Shakil Ahmad.</p>
+                </div>
                 <p class="mt-2 md:mt-0">Built with HTML, Tailwind & Vanilla JS</p>
             </footer>
         </section>

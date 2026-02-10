@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 title1: 'Architecting',
                 title2: 'Resilient',
                 title3: 'Systems.',
-                subtitle: 'Full Stack Engineer specializing in Java/Spring Boot ecosystems, Angular frontends, and DevSecOps. I engineer scalable, secure infrastructure, not just code.',
+                subtitle: 'Full Stack Developer | Java/Spring Boot & TypeScript/Angular | Expert in CI/CD, Test Engineering & System Resilience | DevSecOps & Cloud-Native Development.',
                 viewWork: 'View Work',
                 resume: 'Resume'
             },
@@ -57,7 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 "MOUNTING PORTFOLIO ASSETS...",
                 "OPTIMIZING FOR REKRUTIER EXPERIENCE...",
                 "ACCESS GRANTED."
-            ]
+            ],
+            legal: {
+                nameChange: 'Official name change, formerly known as Shakil Ahmad.'
+            }
         },
         de: {
             nav: { architecture: 'Architektur', experience: 'Erfahrung', credentials: 'Qualifikationen', projects: 'Projekte', contact: 'Kontakt', downloadCV: 'Lebenslauf' },
@@ -66,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 title1: 'Resiliente',
                 title2: 'Systeme',
                 title3: 'Entwickeln.',
-                subtitle: 'Full-Stack-Ingenieur mit Spezialisierung auf Java/Spring Boot-Ökosysteme, Angular-Frontends und DevSecOps. Ich entwickle skalierbare, sichere Infrastruktur, nicht nur Code.',
+                subtitle: 'Full Stack Developer | Java/Spring Boot & TypeScript/Angular | Experte für CI/CD, Test Engineering & System Resilience | DevSecOps & Cloud-Native Development.',
                 viewWork: 'Arbeit Ansehen',
                 resume: 'Lebenslauf'
             },
@@ -115,7 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 "PORTFOLIO-ASSETS WERDEN GELADEN...",
                 "OPTIMIERUNG FÜR REKRUTIERER...",
                 "ZUGRIFF GEWÄHRT."
-            ]
+            ],
+            legal: {
+                nameChange: 'Offizielle Namensänderung, früher bekannt als Shakil Ahmad.'
+            }
         }
     };
 
